@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEPHUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/general/css/general-style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-top">
+            <div class="nav-top-left">
+                <img src="/img/nav/logo.png" alt="stephub logo">
+                <span>STEPHUB</span>
+            </div>
+            <div class="nav-top-right">
+                <a href="#"><span>Settings</span></a>
+                <a href="#"><span>Quick sales</span></a>
+                <a href="#"><span>About us</span></a>
+                <a href="#" class="nounderline"><span class="border-btn">Contact us</span></a>
+                <a href="#"><span>Second hand sales</span></a>
+            </div>
+                <p class="nav-menu"> <span></span> <span></span> <span></span> </p>
+        </div>
+        <div class="nav-bottom">
+            <div class="mobile-hide">
+                <span>Video</span>
+                <span>Specific-request</span>
+                <span>Saved</span>
+            </div>
+            <div class="">
+                <input type="search" id="search-input" placeholder="Goods, services, Friends and community">
+            </div>
+            <div class="mobile-hide">
+                <span>Order</span>                
+                <span>Sell</span>
+                <span class="black-btn">Signup</span>
+                <span>Login</span>
+            </div>
+            
+                <p id="mini-nav-menu" onclick="showminisidenav()"> <span></span> <span></span> <span></span> </p>
+        </div>
+    </nav>
+    <div class="container">
+        
+        <div class="sub-nav">
+            <label for="marker"class="marker marker-top" id="marker1" style="left:30px"></label>
+            <p data-target="services">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="35" height="35" class="sub-nav-svg"><g id="Consult-Talk"><rect x="16" y="25" width="2" height="2"/><rect x="26" y="25" width="2" height="2"/><path d="M61.142,36.01l-3.907-.558a14,14,0,0,0-.657-1.6L58.942,30.7a1,1,0,0,0-.093-1.307l-4.243-4.243A.989.989,0,0,0,54,24.867V15.241A8,8,0,0,0,57,9a7.917,7.917,0,0,0-4.573-7.224A1,1,0,0,0,51,2.68v5.6l-2,.667-2-.667V2.68a1,1,0,0,0-1.427-.9A7.917,7.917,0,0,0,41,9a8,8,0,0,0,3,6.241V22H41a1,1,0,0,0-.99.858l-.647,4.529,1.98.283L41.867,24h4.266l.524,3.67a1,1,0,0,0,.71.818,11.939,11.939,0,0,1,2.4.987,1,1,0,0,0,1.081-.077l2.961-2.22,3.016,3.016L54.6,33.155a1,1,0,0,0-.077,1.081,11.939,11.939,0,0,1,.987,2.4,1,1,0,0,0,.818.71l3.67.524v4.266l-3.67.524a1,1,0,0,0-.818.71,11.939,11.939,0,0,1-.987,2.4,1,1,0,0,0,.077,1.081l2.22,2.961-3.016,3.016L50.845,50.6a1,1,0,0,0-1.081-.077,11.939,11.939,0,0,1-2.4.987,1,1,0,0,0-.71.818L46.133,56H42V51.771a11.1,11.1,0,0,0-.45-3.121,9.11,9.11,0,1,0-6.394-7.062c-.024-.01-.047-.022-.071-.031L27,38.323V36.786A11.089,11.089,0,0,0,30.479,34H33a3,3,0,0,0,3-3V28.816A3,3,0,0,0,38,26V23a3,3,0,0,0-2-2.816V19A14,14,0,0,0,8,19v1.184A3,3,0,0,0,6,23v3a3,3,0,0,0,3,3h2c.064,0,.126-.01.189-.014A11.023,11.023,0,0,0,17,36.786v1.537L8.915,41.557A10.949,10.949,0,0,0,2,51.771V61a1,1,0,0,0,1,1H41a1,1,0,0,0,1-1V58h5a1,1,0,0,0,.99-.858l.558-3.907a14,14,0,0,0,1.6-.657L53.3,54.942a1,1,0,0,0,1.307-.093l4.243-4.243a1,1,0,0,0,.093-1.307l-2.364-3.152a14,14,0,0,0,.657-1.6l3.907-.558A1,1,0,0,0,62,43V37A1,1,0,0,0,61.142,36.01Zm-11-8.588c-.047-.023-.1-.038-.147-.06V15H48v7.93l-.01-.072A1,1,0,0,0,47,22H46V14.74a1,1,0,0,0-.429-.821A6,6,0,0,1,45,4.522V9a1,1,0,0,0,.684.949l3,1a1,1,0,0,0,.632,0l3-1A1,1,0,0,0,53,9V4.522a6,6,0,0,1-.571,9.4A1,1,0,0,0,52,14.74V26.033ZM37,40a7.05,7.05,0,1,1,3.333,5.941,10.916,10.916,0,0,0-2.611-2.877A6.836,6.836,0,0,1,37,40Zm-4-8H31.786a10.9,10.9,0,0,0,1.025-3.014c.063,0,.125.014.189.014h1v2A1,1,0,0,1,33,32ZM31,21a3.015,3.015,0,0,1-2.4-1.2l-1.8-2.4a1,1,0,0,0-.674-.392,1.011,1.011,0,0,0-.751.211L22.019,19.9A5.018,5.018,0,0,1,18.9,21H13V20a9,9,0,0,1,18,0Zm5,5a1,1,0,0,1-1,1H33V22h2a1,1,0,0,1,1,1ZM22,7A12.013,12.013,0,0,1,34,19v1H33a11,11,0,0,0-22,0H10V19A12.013,12.013,0,0,1,22,7ZM9,27a1,1,0,0,1-1-1V23a1,1,0,0,1,1-1h2v5Zm4,0V23h5.9a7.024,7.024,0,0,0,4.372-1.534l2.551-2.041L27,21a5.025,5.025,0,0,0,4,2v4a8.947,8.947,0,0,1-1.522,5H22v2h5.644A8.991,8.991,0,0,1,13,27Zm9,11a10.966,10.966,0,0,0,3-.426V39a3,3,0,0,1-6,0V37.574A10.966,10.966,0,0,0,22,38ZM40,60H34V49H32V60H12V49H10V60H4V51.771a8.958,8.958,0,0,1,5.658-8.357l7.563-3.025a4.968,4.968,0,0,0,9.558,0l7.563,3.025A8.958,8.958,0,0,1,40,51.771Z"/><rect x="43" y="26" width="2" height="2"/><rect x="43" y="52" width="2" height="2"/><rect x="52.192" y="48.192" width="2" height="2" transform="translate(-19.205 52.021) rotate(-45)"/><rect x="56" y="39" width="2" height="2"/><rect x="52.192" y="29.808" width="2" height="2" transform="translate(-6.205 46.636) rotate(-45)"/></g></svg> </span>
+                <span>Services</span></p>
+            <p data-target="products">
+                <span>
+                     <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 511.987 511.987" height="35" viewBox="0 0 511.987 511.987" width="35" class="sub-nav-svg"><g><path d="m375.472 449.911c34.464 0 62.502-28.039 62.502-62.502v-39.255c9.286-3.137 15.992-11.926 15.992-22.257 0-12.953-10.538-23.491-23.492-23.491-12.953 0-23.491 10.538-23.491 23.491 0 10.331 6.706 19.119 15.991 22.257v39.255c0 26.193-21.31 47.502-47.502 47.502-26.193 0-47.503-21.31-47.503-47.502v-39.255c9.285-3.138 15.991-11.926 15.991-22.257 0-12.953-10.538-23.491-23.491-23.491s-23.491 10.538-23.491 23.491c0 10.331 6.706 19.119 15.991 22.257v39.255c0 34.463 28.039 62.502 62.503 62.502zm55.002-132.506c4.683 0 8.492 3.809 8.492 8.491s-3.81 8.492-8.492 8.492-8.491-3.81-8.491-8.492 3.809-8.491 8.491-8.491zm-110.005 0c4.682 0 8.491 3.809 8.491 8.491s-3.81 8.492-8.491 8.492-8.491-3.81-8.491-8.492 3.81-8.491 8.491-8.491z"/><path d="m37.089 511.986h444.688c11.476 0 20.419-9.982 19.168-21.384l-8.756-79.901c-.451-4.119-4.146-7.084-8.272-6.639-4.117.452-7.089 4.155-6.638 8.272l8.756 79.902c.277 2.535-1.705 4.75-4.258 4.75h-212.602-.01c-2.533 0-4.537-2.194-4.258-4.75l21.63-197.371c.238-2.175 2.069-3.816 4.258-3.816h169.354c2.188 0 4.019 1.641 4.258 3.816l9.037 82.469c.451 4.117 4.129 7.087 8.272 6.639 4.117-.452 7.089-4.155 6.638-8.272l-9.037-82.469c-1.074-9.795-9.314-17.182-19.168-17.182h-82.974l-11.582-105.69c-1.456-13.291-12.637-23.313-26.007-23.313h-29.839v-42.767c0-57.5-46.78-104.28-104.28-104.28s-104.28 46.78-104.28 104.28v42.767h-29.838c-13.371 0-24.552 10.022-26.008 23.313l-34.259 312.614c-1.695 15.475 10.446 29.012 26.007 29.012zm-11.096-27.379 34.259-312.613c.622-5.67 5.393-9.947 11.098-9.947h29.838v27.928c-9.798 3.172-16.905 12.38-16.905 23.221 0 13.457 10.948 24.405 24.405 24.405s24.405-10.948 24.405-24.405c0-10.841-7.107-20.049-16.905-23.221v-27.928h71.78c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-71.78v-42.767c0-49.229 40.051-89.28 89.28-89.28s89.28 40.051 89.28 89.28v42.767h-71.78c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h71.78v27.928c-9.798 3.172-16.904 12.38-16.904 23.221 0 13.457 10.947 24.405 24.404 24.405s24.405-10.948 24.405-24.405c0-10.841-7.107-20.049-16.905-23.221v-27.928h29.839c5.704 0 10.475 4.276 11.097 9.947l11.402 104.056h-71.29c-9.855 0-18.096 7.387-19.168 17.183l-21.63 197.371c-.236 2.148-.046 4.562.369 6.383h-213.278c-6.65-.001-11.821-5.754-11.096-12.38zm82.694-280.816c5.187 0 9.405 4.219 9.405 9.405s-4.219 9.405-9.405 9.405-9.405-4.219-9.405-9.405 4.218-9.405 9.405-9.405zm193.56 0c5.187 0 9.405 4.219 9.405 9.405s-4.219 9.405-9.405 9.405-9.404-4.219-9.404-9.405 4.219-9.405 9.404-9.405z"/></g></svg>
+                </span>
+                <span>Products</span>
+            </p>            
+        </div>
+        <div class="main-nav-div">
+            <div class="main-nav">
+                <label for="marker" class="marker" id="marker2"></label>
+                <span data-target="top">Top</span>
+                <span data-target="category">Category</span>
+                <span data-target="community">Community</span>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content service-content" id="top">
+                <h1>Fast, Reliable and affordable services close to you</h1>
+                <div class="display">
+                    <div class="">
+                        <h3>Graphics Design</h3>
+                        <div class="column-3">
+                            <div class="service-div">
+                                <div class="service-div-top">
+                                    <span class="bold">Illustrator</span>
+                                    <span>Category: Graphics design</span>
+                                </div>
+                                <div class="service-div-middle">
+                                    <img src="/products/28bfa7af93de6dfefa0476b839517d5f.jpg" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore, expedita at porro rerum nam, facere soluta rem magnam praesentium quos iusto .
+                                    </p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <p>
+                                        STEP: <span class="bold">
+                                            Ifo_tim Lorem, ipsum.
+                                        </span>
+                                    </p>
+                                    <p>Rating <span class="bold">
+                                        5.0
+                                    </span></p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <span>
+                                        See More
+                                    </span>
+                                    <span>
+                                        Save
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="service-div">
+                                <div class="service-div-top">
+                                    <span class="bold">Model</span>
+                                    <span>Category: Fashion</span>
+                                </div>
+                                <div class="service-div-middle">
+                                    <img src="/products/man4.jpg" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore, expedita at porro rerum nam, facere soluta rem magnam praesentium quos iusto .
+                                    </p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <p>
+                                        STEP: <span class="bold">
+                                            Ifo_tim Lorem, ipsum.
+                                        </span>
+                                    </p>
+                                    <p>Rating <span class="bold">
+                                        5.0
+                                    </span></p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <span>
+                                        See More
+                                    </span>
+                                    <span>
+                                        Save
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="service-div">
+                                <div class="service-div-top">
+                                    <span class="bold">Fashion Designer</span>
+                                    <span>Category: Graphics design</span>
+                                </div>
+                                <div class="service-div-middle">
+                                    <img src="/img/home/closet.jpg" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore, expedita at porro rerum nam, facere soluta rem magnam praesentium quos iusto .
+                                    </p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <p>
+                                        STEP: <span class="bold">
+                                            Ifo_tim Lorem, ipsum.
+                                        </span>
+                                    </p>
+                                    <p>Rating <span class="bold">
+                                        5.0
+                                    </span></p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <span>
+                                        See More
+                                    </span>
+                                    <span>
+                                        Save
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-div">
+                                <div class="service-div-top">
+                                    <span class="bold">Model</span>
+                                    <span>Category: Fashion</span>
+                                </div>
+                                <div class="service-div-middle">
+                                    <img src="/products/man4.jpg" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore, expedita at porro rerum nam, facere soluta rem magnam praesentium quos iusto .
+                                    </p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <p>
+                                        STEP: <span class="bold">
+                                            Ifo_tim Lorem, ipsum.
+                                        </span>
+                                    </p>
+                                    <p>Rating <span class="bold">
+                                        5.0
+                                    </span></p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <span>
+                                        See More
+                                    </span>
+                                    <span>
+                                        Save
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-div">
+                                <div class="service-div-top">
+                                    <span class="bold">Fashion Designer</span>
+                                    <span>Category: Graphics design</span>
+                                </div>
+                                <div class="service-div-middle">
+                                    <img src="/img/home/closet.jpg" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore, expedita at porro rerum nam, facere soluta rem magnam praesentium quos iusto .
+                                    </p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <p>
+                                        STEP: <span class="bold">
+                                            Ifo_tim Lorem, ipsum.
+                                        </span>
+                                    </p>
+                                    <p>Rating <span class="bold">
+                                        5.0
+                                    </span></p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <span>
+                                        See More
+                                    </span>
+                                    <span>
+                                        Save
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="service-div">
+                                <div class="service-div-top">
+                                    <span class="bold">Illustrator</span>
+                                    <span>Category: Graphics design</span>
+                                </div>
+                                <div class="service-div-middle">
+                                    <img src="/products/28bfa7af93de6dfefa0476b839517d5f.jpg" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore, expedita at porro rerum nam, facere soluta rem magnam praesentium quos iusto .
+                                    </p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <p>
+                                        STEP: <span class="bold">
+                                            Ifo_tim Lorem, ipsum.
+                                        </span>
+                                    </p>
+                                    <p>Rating <span class="bold">
+                                        5.0
+                                    </span></p>
+                                </div>
+                                <div class="service-div-bottom">
+                                    <span>
+                                        See More
+                                    </span>
+                                    <span>
+                                        Save
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content service-content" id="category">
+                hello
+            </div>
+            <div class="content service-content" id="community">
+                
+                <h1 class="bold">Community</h1>
+                <p style="margin:1em 0 1em 10vw;">A good way to meet great people and do great things</p>
+                <div class="display">
+                    <div class="general-community">
+                        <h3>GENERAL</h3>
+                        <div class="column-3">
+                            <div class="community-div">
+                                <img src="/img/home/closet.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/mobile.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/outfit2.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="community-div">
+                                <img src="/img/home/closet.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/mobile.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/outfit2.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-community">
+                        <h3>SUB COMMUNITIES</h3>
+                        <div class="column-3">
+                            <div class="community-div">
+                                <img src="/img/home/closet.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/mobile.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/outfit2.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="community-div">
+                                <img src="/img/home/closet.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/mobile.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/outfit2.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="main-content">
+            <div class="content" id="top">
+                <h2>Awesomeness</h2>
+                <p style="margin:1em 1em 1em 10vw;"> <span style="color: var(--black); font-weight: 600;">Futarians</span> are awesome</p>
+                <div class="prod-ctn column-auto">
+                    <div class="prod">
+                        <span class="addtocart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" width="25" height="25" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M471.467,234.667c-6.4-2.133-10.667,2.133-12.8,8.533l-8.533,36.267L138.667,320l-38.4-192h145.067    c6.4,0,10.667-4.267,10.667-10.667c0-6.4-4.267-10.667-10.667-10.667H96L85.333,51.2c0-4.267-6.4-8.533-10.667-8.533h-64    C4.267,42.667,0,46.934,0,53.333C0,59.733,4.267,64,10.667,64h55.467l51.2,260.267c6.4,34.133,38.4,59.733,72.533,59.733H435.2    c6.4,0,10.667-4.267,10.667-10.667c0-6.4-4.267-10.667-10.667-10.667H192c-17.067,0-34.133-8.533-42.667-23.467L460.8,296.533    c4.267,0,8.533-4.267,8.533-8.533L480,245.333C482.133,243.2,477.867,236.8,471.467,234.667z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M181.333,405.333c-29.867,0-53.333,23.467-53.333,53.333S151.467,512,181.333,512c29.867,0,53.333-23.467,53.333-53.333    S211.2,405.333,181.333,405.333z M181.333,490.667c-17.067,0-32-14.934-32-32s14.933-32,32-32c17.067,0,32,14.934,32,32    S198.4,490.667,181.333,490.667z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M437.333,106.667h-32v-32c0-6.4-4.267-10.667-10.667-10.667C388.267,64,384,68.267,384,74.667v32h-32    c-6.4,0-10.667,4.267-10.667,10.667c0,6.4,4.267,10.667,10.667,10.667h32v32c0,6.4,4.267,10.667,10.667,10.667    c6.4,0,10.667-4.267,10.667-10.667v-32h32c6.4,0,10.667-4.267,10.667-10.667C448,110.934,443.733,106.667,437.333,106.667z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M394.667,405.333c-29.867,0-53.333,23.467-53.333,53.333S364.8,512,394.667,512C424.533,512,448,488.533,448,458.667    S424.533,405.333,394.667,405.333z M394.667,490.667c-17.067,0-32-14.934-32-32s14.933-32,32-32c17.067,0,32,14.934,32,32    S411.733,490.667,394.667,490.667z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M394.667,0c-64,0-117.333,53.333-117.333,117.333s53.333,117.333,117.333,117.333S512,181.333,512,117.333    S458.667,0,394.667,0z M394.667,213.333c-53.333,0-96-42.667-96-96c0-53.333,42.667-96,96-96c53.333,0,96,42.667,96,96    C490.667,170.667,448,213.333,394.667,213.333z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span> <a href="/single-product">
+                            <div class="product-img-div">
+                                <img src="/products/man2.jpg" alt="" class="image">
+                            </div>
+                            <div class="">
+                                <div class="desc">
+                                    <p class="product-name">Sneakers</p>
+                                    <p class="product-price">N1500</p>
+                                </div>
+                                <div class="size-color">
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                    <p>
+                                        <span>40</span>
+                                        <span>42</span>
+                                        <span>44</span>
+                                        <span>45</span>
+                                        <span>46</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="prod">
+                        <span class="addtocart">cart</span> <a href="/single-product">
+                            <div class="product-img-div">
+                                <img src="/products/man1.jpg" alt="" class="image">
+                            </div>
+                            <div class="">
+                                <div class="desc">
+                                    <p class="product-name">Sneakers</p>
+                                    <p class="product-price">N1500</p>
+                                </div>
+                                <div class="size-color">
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                    <p>
+                                        <span>40</span>
+                                        <span>42</span>
+                                        <span>44</span>
+                                        <span>45</span>
+                                        <span>46</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="prod">
+                        <span class="addtocart">cart</span> <a href="/single-product">
+                            <div class="product-img-div">
+                                <img src="/products/woman3.jpg" alt="" class="image">
+                            </div>
+                            <div class="">
+                                <div class="desc">
+                                    <p class="product-name">Sneakers</p>
+                                    <p class="product-price">N1500</p>
+                                </div>
+                                <div class="size-color">
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                    <p>
+                                        <span>40</span>
+                                        <span>42</span>
+                                        <span>44</span>
+                                        <span>45</span>
+                                        <span>46</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="prod">
+                        <span class="addtocart">cart</span> <a href="/single-product">
+                            <div class="product-img-div">
+                                <img src="/products/man4.jpg" alt="" class="image">
+                            </div>
+                            <div class="">
+                                <div class="desc">
+                                    <p class="product-name">Sneakers</p>
+                                    <p class="product-price">N1500</p>
+                                </div>
+                                <div class="size-color">
+                                    <p>
+                                        <span></span>
+                                        <span style="background-color: red;"></span>
+                                        <span style="background-color: rgb(0, 81, 255);"></span>
+                                        <span style="background-color: rgb(0, 255, 42);"></span>
+                                    </p>
+                                    <p>
+                                        <span>40</span>
+                                        <span>42</span>
+                                        <span>44</span>
+                                        <span>45</span>
+                                        <span>46</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="prod">
+                        <span class="addtocart">cart</span> <a href="/single-product">
+                            <div class="product-img-div">
+                                <img src="/products/man2.jpg" alt="" class="image">
+                            </div>
+                            <div class="">
+                                <div class="desc">
+                                    <p class="product-name">Sneakers</p>
+                                    <p class="product-price">N1500</p>
+                                </div>
+                                <div class="size-color">
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                    <p>
+                                        <span>40</span>
+                                        <span>42</span>
+                                        <span>44</span>
+                                        <span>45</span>
+                                        <span>46</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="prod">
+                        <span class="addtocart">cart</span> <a href="/single-product">
+                            <div class="product-img-div">
+                                <img src="/products/man2.jpg" alt="" class="image">
+                            </div>
+                            <div class="">
+                                <div class="desc">
+                                    <p class="product-name">Sneakers</p>
+                                    <p class="product-price">N1500</p>
+                                </div>
+                                <div class="size-color">
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                    <p>
+                                        <span>40</span>
+                                        <span>42</span>
+                                        <span>44</span>
+                                        <span>45</span>
+                                        <span>46</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <span></span>
+                </div>
+            </div>
+            <div class="content" id="category">
+                hello
+            </div>
+            <div class="content service-content" id="community">
+                <p style="margin:1em 0 ;">A good way to meet great people and do great things</p>
+                <div class="display">
+                    <div class="general-community">
+                        <h3>GENERAL</h3>
+                        <div class="column-3">
+                            <div class="community-div">
+                                <img src="/img/home/closet.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/mobile.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/outfit2.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="community-div">
+                                <img src="/img/home/closet.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/mobile.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/outfit2.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-community">
+                        <h3>SUB COMMUNITIES</h3>
+                        <div class="column-3">
+                            <div class="community-div">
+                                <img src="/img/home/closet.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/mobile.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/outfit2.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="community-div">
+                                <img src="/img/home/closet.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/mobile.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-div">
+                                <img src="/img/home/outfit2.jpg" alt="">
+                                <div class="">
+                                    <p class="bold">Graphics design</p>
+                                    <div class="">
+                                        <span>1k memb</span>
+                                        <span>3k post</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var wid = document.body.clientWidth;
+        var main_content = document.getElementsByClassName("main-content")[0]
+        var scrolled= 0;
+        var category = document.getElementById("category");
+        var community = document.getElementById("community");
+        // main_content.scrollBy(wid*2,0);
+        
+        // Marker section
+        
+        var marker1 = document.querySelector("#marker1");
+        var marker2 = document.querySelector("#marker2");
+        var item1 = document.querySelectorAll(".sub-nav p");
+        var item2 = document.querySelectorAll(".main-nav span");
+        var svgg = document.querySelectorAll(".sub-nav-svg");
+
+        function scrolldiv(index){
+            // var category = document.getElementById("category");
+            // var community = document.getElementById("community");
+            if(index==0){
+                main_content.scrollLeft =0;
+                scrolled=0;
+                
+            }
+            else if(index==1){
+                main_content.scrollLeft = category.offsetLeft;
+                scrolled=1;
+            }
+            else if(index==2){
+                main_content.scrollLeft = community.offsetLeft;
+                scrolled=2;
+            }
+        }
+        function indicator(e, i){
+            if(i==1){
+                marker1.style.left = e.offsetLeft + "px";
+                marker1.style.width = e.offsetWidth + "px";
+            }
+            else if(i==2){
+                marker2.style.left = e.offsetLeft + "px";
+                marker2.style.width = e.offsetWidth + "px";
+            }
+        }
+
+        // console.log(item)
+        indicator(item1[0].children[1],1);
+        indicator(item2[0],2);
+
+        item1.forEach(link => {
+            link.addEventListener("click", function (e){
+                indicator(e.target,1);
+            });
+        });
+        svgg.forEach((rec,index)=>{
+            rec.addEventListener("click",function(){
+                if(index== 0 ){
+                    indicator(item1[0].children[1],1)
+                }else{
+                    indicator(item1[1].children[1],1)
+                }
+            })
+        })
+        item2.forEach((link, index) => {
+            link.addEventListener("click", function (e){
+                scrolldiv(index)
+                indicator(e.target,2);
+            });
+        });
+
+
+        function horizontalscroll(e){
+            // console.log( scrolled)
+            if( scrolled==0 && main_content.scrollLeft >= wid/6 && main_content.scrollLeft < wid){
+                // scrolldiv(1);
+                main_content.scrollLeft = category.offsetLeft;
+                indicator(item2[1],2);
+                scrolled= 1;
+                // console.log("hh1")
+            }
+            else if( main_content.scrollLeft >= category.offsetLeft+ wid/6 && scrolled== 1){
+                main_content.scrollLeft = community.offsetLeft;
+                indicator(item2[2],2);
+                scrolled= 2;
+                // console.log("hh2");
+            }
+            else if(scrolled==2 && main_content.scrollLeft < community.offsetLeft- wid/6){
+                main_content.scrollLeft = category.offsetLeft;
+                indicator(item2[1],2);
+                scrolled= 1;
+                // console.log("hh3")
+            }
+            else if(scrolled==1 && main_content.scrollLeft < category.offsetLeft-wid/6){
+                main_content.scrollLeft = 0;
+                indicator(item2[0],2);
+                scrolled= 0;
+                // console.log("hh4")
+            }
+        }
+        main_content.addEventListener("scroll", horizontalscroll)
+    </script>
+</body>
+</html>
